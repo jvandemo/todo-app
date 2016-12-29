@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {Todo} from './todo';
-import {TodoDataService} from './todo-data.service';
+import { Component } from '@angular/core';
+import { Todo } from './todo';
+import { TodoDataService } from './todo-data.service';
 
 @Component({
   selector: 'app-root',
@@ -20,11 +20,11 @@ export class AppComponent {
     this.newTodo = new Todo();
   }
 
-  toggleTodoComplete(todo) {
+  onToggleTodoComplete(todo) {
     this.todoDataService.toggleTodoComplete(todo);
   }
 
-  removeTodo(todo) {
+  onRemoveTodo(todo) {
     this.todoDataService.deleteTodoById(todo.id);
   }
 
