@@ -19,11 +19,11 @@ export class TodoListItemComponent {
   constructor() {
   }
 
-  toggleTodoComplete(todo) {
+  toggleTodoComplete(todo: Todo) {
     this.toggleComplete.emit(todo);
   }
 
-  removeTodo(todo) {
+  removeTodo(todo: Todo) {
     this.remove.emit(todo);
   }
 
